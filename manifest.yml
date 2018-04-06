@@ -1,0 +1,16 @@
+---
+applications:
+- name: thirteenthFactor
+  instances: 1
+  memory: 64M
+  buildpack: binary_buildpack
+  command: "./thirteenthFactor"
+  env:
+    ApiAddress: ""
+    Username: ""
+    Password: ""
+    SkipSslValidation: "true"
+    MinutesInPastToQuery: "60"
+    NumberOfCrashesBeforeKill: "5"
+    MinutesBetweenQueries: "60"
+    DryRun: "false"
