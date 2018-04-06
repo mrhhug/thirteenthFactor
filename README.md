@@ -1,5 +1,5 @@
 # thirteenthFactor
-Cloud native application intended to stop apps running in CloudFoundry apps caught in a crash loop.
+Cloud native application intended to stop running CloudFoundry apps caught in crash loop.
 
 ### Quick Start Guide
 1. Download manifest
