@@ -4,7 +4,7 @@ Cloud native application intended to stop running CloudFoundry apps caught in cr
 ## Create Camp Crystal
 1. Create user
 	<pre>
-	uaac user add Jason_Voorhees -p <credhubstoredpw> --emails 'looksLikeAppInCrashLoop-STOPPED'
+	uaac user add Jason_Voorhees -p "credhubstoredpw" --emails 'looksLikeAppInCrashLoop-STOPPED'
 	</pre>
 2. Grant privileges
 	<pre>
