@@ -33,17 +33,17 @@ func init() {
 	} else {
 		ApiAddress = os.Getenv("ApiAddress")
 	}
-	if "" == os.Getenv("Username") {
-		fmt.Fprintln(os.Stderr, "Environmental variable 'Username' not set")
+	if "" == os.Getenv("CFServiceAccountUsername") {
+		fmt.Fprintln(os.Stderr, "Environmental variable 'CFServiceAccountUsername' not set")
 		fail = true
 	} else {
-		Username = os.Getenv("Username")
+		Username = os.Getenv("CFServiceAccountUsername")
 	}
-	if "" == os.Getenv("Password") {
-		fmt.Fprintln(os.Stderr, "Environmental variable 'Password' not set")
+	if "" == os.Getenv("CFServiceAccountPassword") {
+		fmt.Fprintln(os.Stderr, "Environmental variable 'CFServiceAccountPassword' not set")
 		fail = true
 	} else {
-		Password = os.Getenv("Password")
+		Password = os.Getenv("CFServiceAccountPassword")
 	}
 	var err error
 	MinutesBetweenQueries, err = strconv.Atoi(os.Getenv("MinutesBetweenQueries"))

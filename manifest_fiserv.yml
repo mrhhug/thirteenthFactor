@@ -6,9 +6,9 @@ applications:
   buildpack: binary_buildpack
   command: "./thirteenthFactor"
   env:
-    ApiAddress: ""
-    CFServiceAccountUsername: ""
-    CFServiceAccountPassword: ""
+    ApiAddress: "https://api.cloudfoundry.onefiserv.net"
+    CFServiceAccountUsername: "Jason_Voorhees"
+    CFServiceAccountPassword: "vhUYTgTa1Z6ak4Xa+nIieudcyseRlK5CVehuHVJcvew="
     SkipSslValidation: "true"
     MinutesInPastToQuery: "60"
     NumberOfCrashesBeforeKill: "5"
