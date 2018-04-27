@@ -137,6 +137,7 @@ func main() {
 		port = "8080"
 	}
 	scheduler.Every(MinutesBetweenQueries).Minutes().Run(job)
+	fmt.Printf("Starting webserver on port: %v", port)
 	http.HandleFunc("/", rootHandler)
 	http.ListenAndServe(":"+port, nil)
 }

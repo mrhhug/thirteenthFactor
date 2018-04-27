@@ -30,3 +30,12 @@ Cloud native application intended to stop running CloudFoundry apps caught in cr
 	<pre>
 	./deploy.bash
 	</pre>
+
+### Spunk query string
+<pre>stopped apps : (index=CloudFoundry cf_org_name="myOrg" cf_space_name="mySpae")  | spath cf_app_name  | search cf_app_name=thirteenthfactor | search source=diego_cell | search msg=*killing*</pre>
+<pre>apps crashing below threshold : (index=CloudFoundry cf_org_name="myOrg" cf_space_name="mySpace")  | spath cf_app_name  | search cf_app_name=thirteenthfactor | search source=diego_cell | search msg=*now*<pre>
+
+# TODO
+check for recent deployments?
+omit spaces, orgs or apps - with time limitation?
+UI to temporaryly exclude apps?
